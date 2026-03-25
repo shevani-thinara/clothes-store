@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store - Women's Clothing</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        width: 95%;
+        margin: auto;
+      }
+
+      .product {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
+      .product img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .product h3 {
+        margin: 10px 0 5px;
+        font-size: 1.1rem;
+      }
+
+      .price {
+        color: #e63946;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .size-selector {
+        padding: 6px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .add-to-cart {
+        background: #2c3e50;
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .add-to-cart:hover {
+        background: #34495e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <section>
+      <h2>Women's Clothing</h2>
+
+      <div class="products">
+        <div class="product">
+          <img src="Images/Womens/Shoulder sleeve dress.jpg" />
+          <h3>Striped Asymmetric Mini Dress</h3>
+          <p class="price">LKR 5,995</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Drop Shoulder Pocket Patched Shirt & Shorts.jpg"
+          />
+          <h3>Drop Shoulder Shirt & Shorts</h3>
+          <p class="price">LKR 7,500</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Hollow Puff Sleeve Wave Hem Elegant Office Lady Style Women Blouse, Summer.jpg"
+          />
+          <h3>Puff Sleeve Wave Hem Blouse</h3>
+          <p class="price">LKR 6,800</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Lyrur Women's Summer Mini Dresses 2025 Spring Puff Sleeve Tie Waist Faux Wrap Slim Fit Night Out Party Bodycon Dress.jpg"
+          />
+          <h3>Summer Mini Dress</h3>
+          <p class="price">LKR 7,200</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Plataz Sleeveless Tie Waist Mini Dress DJPT - Red _ XXL.jpg"
+          />
+          <h3>Red Sleeveless Mini Dress</h3>
+          <p class="price">LKR 6,900</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Rafferiza Cut Out Gathered Sleeve Flounce Cuff Crop Top & Bodycon Skirt.jpg"
+          />
+          <h3>Crop Top & Skirt Set</h3>
+          <p class="price">LKR 8,100</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Sexy Outfits That'll Drive Them Crazy (& Are Shockingly Cheap On Amazon).jpg"
+          />
+          <h3>Sexy Outfit</h3>
+          <p class="price">LKR 5,500</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img src="Images/Womens/Solid Knot Front Florida Shorts black.jpg" />
+          <h3>Solid Knot Florida Shorts Black</h3>
+          <p class="price">LKR 3,600</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>26</option>
+            <option>28</option>
+            <option>30</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img src="Images/Womens/Solid Knot Front Florida Shorts.jpg" />
+          <h3>Solid Knot Florida Shorts</h3>
+          <p class="price">LKR 3,550</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>26</option>
+            <option>28</option>
+            <option>30</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img src="Images/Womens/Solid Wide Leg Shorts.jpg" />
+          <h3>Solid Wide Leg Shorts</h3>
+          <p class="price">LKR 4,200</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>26</option>
+            <option>28</option>
+            <option>30</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img
+            src="Images/Womens/Surplice Short Sleeve Mini Dress - Tangerine _ 2XL.jpg"
+          />
+          <h3>Tangerine Mini Dress</h3>
+          <p class="price">LKR 6,300</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product">
+          <img src="Images/Womens/white croptop.jpg" />
+          <h3>White Crop Top</h3>
+          <p class="price">LKR 2,900</p>
+          <select class="size-selector">
+            <option disabled selected>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+
+      const buttons = document.querySelectorAll(".add-to-cart");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const product = this.parentElement.querySelector("h3").innerText;
+          const size = this.parentElement.querySelector(".size-selector").value;
+
+          if (!size) {
+            alert("Please select size!");
+          } else {
+            alert(product + " (Size: " + size + ") added to cart!");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

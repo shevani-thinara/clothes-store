@@ -1,0 +1,135 @@
+/* ===== Global Page Styles ===== */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 5px;
+}
+
+/* ===== Product Grid Styles ===== */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  flex: 0 0 220px; /* small "icon-like" cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* push name & price to bottom */
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+  transition: transform 0.2s;
+  height: auto; /* uniform height for all cards */
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* keeps images visible but smaller */
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.product h3,
+.product .price {
+  margin: 5px 0;
+}
+
+/* fix product name & price at bottom */
+.product-info {
+  margin-top: auto; /* pushes this section to bottom */
+}
+
+.product .price {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+video {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 400px) {
+  .product {
+    flex: 1 1 100%;
+  }
+}
+
+/* Footer links hover */
+footer a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}

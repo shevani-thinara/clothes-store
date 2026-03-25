@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store - Kids Collection</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Product info container for dropdown, price & button */
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto; /* adjust to fit all elements */
+      }
+
+      .size-select {
+        padding: 5px;
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+      .cart-btn {
+        background: #2c3e50;
+        color: white;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.2s;
+      }
+
+      .cart-btn:hover {
+        background: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- KIDS PRODUCTS -->
+    <section>
+      <h2>Kids Clothing</h2>
+      <div class="products">
+        <!-- Product 1 -->
+        <div class="product">
+          <img
+            src="Images/Kids/2 Peças_Conjunto Top Regata com Aplicação de Flor e Coelhinho e Short com Laço para Bebê Menina, Conjunto Casual Doce e Fofo para Verão de Criança Pequena.jpg"
+            alt="Baby Girl Top & Shorts"
+          />
+          <div class="product-info">
+            <h3>Baby Girl Top & Shorts</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>6-12M</option>
+              <option>12-18M</option>
+            </select>
+            <p class="price">LKR 3,500</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+          <img
+            src="Images/Kids/2pcs Baby Boys_Toddler Washed Denim Shirt Jacket With Pockets & Denim Shorts Set, Fashionable, Cute And Versatile Outfit For Spring_Summer Outdoor Play Or Casual Wear.jpg"
+            alt="Baby Boy Denim Set"
+          />
+          <div class="product-info">
+            <h3>Baby Boy Denim Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>6-12M</option>
+              <option>12-18M</option>
+              <option>18-24M</option>
+            </select>
+            <p class="price">LKR 4,200</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+          <img
+            src="Images/Kids/2pcs_Set Girl Little Young Girl' Sleeveless Dress & Shorts Set, Peter Pan Collar Princess Floral Bow Pattern, Summer.jpg"
+            alt="Girls Dress & Shorts"
+          />
+          <div class="product-info">
+            <h3>Girls Dress & Shorts Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+              <option>4-5Y</option>
+            </select>
+            <p class="price">LKR 3,900</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Bộ đồ bé gái áo hồng quần Jean dáng suông đính nơ túi cho bé từ 8kg đến 20kg.jpg"
+            alt="Pink Girl Set"
+          />
+          <div class="product-info">
+            <h3>Pink Girl Top & Jeans</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>8-12kg</option>
+              <option>12-16kg</option>
+              <option>16-20kg</option>
+            </select>
+            <p class="price">LKR 4,500</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Conjunto de 2 piezas con camiseta de manga corta dulce y fresca con mariposas y falda de mezclilla de moda para bebé niña.jpg"
+            alt="Butterfly Dress Set"
+          />
+          <div class="product-info">
+            <h3>Butterfly Dress Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>6-12M</option>
+              <option>12-18M</option>
+            </select>
+            <p class="price">LKR 3,650</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+          <img
+            src="Images/Kids/CONJUNTO OVERSIZED MASCULINO SHORTS E REGATA  INFANTIL MENINO - FORMA GRANDE.jpg"
+            alt="Oversized Boy Set"
+          />
+          <div class="product-info">
+            <h3>Oversized Boy Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+              <option>4-5Y</option>
+            </select>
+            <p class="price">LKR 4,100</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Cute Coffee Pockets Floral Patchwork False Two Pieces Cotton Baby Girls Dress Summer - Height 100cm (2- 3 Years).jpg"
+            alt="Coffee Patchwork Dress"
+          />
+          <div class="product-info">
+            <h3>Coffee Patchwork Dress</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 3,750</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Girls Autumn_Winter Casual White Long Sleeve Sweatshirt With Pink 3D Bow + Pink & White Contrast Color Pants Set, Sweet & Cute, Comfortable.jpg"
+            alt="Winter White Set"
+          />
+          <div class="product-info">
+            <h3>Winter White Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>3-4Y</option>
+              <option>4-5Y</option>
+              <option>5-6Y</option>
+            </select>
+            <p class="price">LKR 4,600</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Shop this comment link __men summer outfit ideas 2026__trendy men summer outfits__casual summer outfits for men__mens street style summer look__old money summer outfits men__quiet luxury menswear summe brown.jpg"
+            alt="Summer Kids Outfit"
+          />
+          <div class="product-info">
+            <h3>Summer Kids Outfit</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>3-4Y</option>
+              <option>4-5Y</option>
+            </select>
+            <p class="price">LKR 3,900</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Summer Outfits for Girls in 2025 – Cute Dresses,___.jpg"
+            alt="Girls Summer Dress"
+          />
+          <div class="product-info">
+            <h3>Girls Summer Dress</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+              <option>4-5Y</option>
+            </select>
+            <p class="price">LKR 3,500</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Toddler Boys Bear Print Shirt & Shorts Without Tee.jpg"
+            alt="Bear Print Boy Set"
+          />
+          <div class="product-info">
+            <h3>Bear Print Boy Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 4,000</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Toddler Boys Bear Print Tee & Letter Graphic Shorts.jpg"
+            alt="Bear Tee & Shorts"
+          />
+          <div class="product-info">
+            <h3>Bear Tee & Shorts</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 3,800</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Toddler Boys Striped Shirt & Shorts.jpg"
+            alt="Striped Boy Set"
+          />
+          <div class="product-info">
+            <h3>Striped Boy Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 3,750</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Wholesale Retro VHS Toddler Tee 80s Rock Band Tee Sweet Child O Mine for your store - Faire.jpg"
+            alt="Retro Toddler Tee"
+          />
+          <div class="product-info">
+            <h3>Retro Toddler Tee</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 3,500</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Young Boy 2pcs_Set Casual And Comfortable Workwear Style Short Sleeve Top With Side Vest And Shorts.jpg"
+            alt="Young Boy Set"
+          />
+          <div class="product-info">
+            <h3>Young Boy Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>3-4Y</option>
+              <option>4-5Y</option>
+            </select>
+            <p class="price">LKR 4,000</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 16 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Young Girl Bow Decor Stylish Polka Dot Print Camisole And Shorts Set.jpg"
+            alt="Young Girl Polka Dot Set"
+          />
+          <div class="product-info">
+            <h3>Young Girl Polka Dot Set</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 3,700</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 17 -->
+        <div class="product">
+          <img
+            src="Images/Kids/Young Girl Heart Print Ruffle Trim Belted Dress.jpg"
+            alt="Heart Print Dress"
+          />
+          <div class="product-info">
+            <h3>Heart Print Dress</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>2-3Y</option>
+              <option>3-4Y</option>
+            </select>
+            <p class="price">LKR 3,900</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 18 -->
+        <div class="product">
+          <img
+            src="Images/Kids/ZOEREA Toddler Baby Boy Clothes Outfits Long Sleeve Solid Sweatshirt and Pants 2 Piece Fall Winter Sweatsuit Set 1-5T.jpg"
+            alt="Toddler Boy Sweatsuit"
+          />
+          <div class="product-info">
+            <h3>Toddler Boy Sweatsuit</h3>
+            <label>Size:</label>
+            <select class="size-select">
+              <option>1-2Y</option>
+              <option>2-3Y</option>
+              <option>3-5Y</option>
+            </select>
+            <p class="price">LKR 4,200</p>
+            <button class="cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Header & Footer -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

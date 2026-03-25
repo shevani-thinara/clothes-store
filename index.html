@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ===== Product Grid Styles ===== */
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        width: 95%;
+        margin: auto;
+      }
+
+      .product {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.3s;
+        height: auto;
+      }
+
+      .product:hover {
+        transform: translateY(-5px);
+      }
+
+      .product img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .product h3 {
+        margin: 10px 0 5px;
+        font-size: 1.1rem;
+      }
+
+      .product p {
+        margin: 5px 0;
+        font-size: 0.95rem;
+      }
+
+      .size-selector {
+        margin: 5px 0;
+        padding: 4px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 0.9rem;
+      }
+
+      .add-to-cart {
+        background-color: #2c3e50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 6px 10px;
+        cursor: pointer;
+        margin-top: 5px;
+        transition: background 0.2s;
+      }
+
+      .add-to-cart:hover {
+        background-color: #e01111;
+      }
+
+      @media (max-width: 768px) {
+        .products {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- VIDEO SECTION -->
+    <section>
+      <h2>Fashion Collection</h2>
+      <video autoplay muted loop>
+        <source
+          src="Images/Header Video/PixVerse_V5.6_Image_Text_720P_clothing_website.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <p>Discover the newest fashion styles for men, women and kids.</p>
+    </section>
+
+    <!-- CATEGORY SECTION -->
+    <section>
+      <h2>Shop by Category</h2>
+      <div class="products">
+        <div class="product">
+          <a href="mens.html"
+            ><img src="Images/Catalogue Images/MENSWEAR.jpg"
+          /></a>
+          <h3>Mens</h3>
+          <p>Modern fashion for men</p>
+        </div>
+
+        <div class="product">
+          <a href="womens.html"
+            ><img
+              src="Images/Catalogue Images/Lookbook __ fashion brand - Nata Beloklokova.jpg"
+          /></a>
+          <h3>Womens</h3>
+          <p>Elegant and stylish outfits</p>
+        </div>
+
+        <div class="product">
+          <a href="unisex.html"
+            ><img src="Images/Catalogue Images/Archangel Apparel.jpg"
+          /></a>
+          <h3>Unisex</h3>
+          <p>Fashion for everyone</p>
+        </div>
+
+        <div class="product">
+          <a href="kids.html"
+            ><img
+              src="Images/Catalogue Images/Карточки для Wildberries детская одежда.jpg"
+          /></a>
+          <h3>Kids</h3>
+          <p>Comfortable kids clothing</p>
+        </div>
+
+        <div class="product">
+          <a href="bags.html"
+            ><img
+              src="Images/Catalogue Images/Chic & Comfy_ Must-Have Sandals for Women.jpg"
+          /></a>
+          <h3>Bags & Footwear</h3>
+          <p>Shoes and accessories</p>
+        </div>
+
+        <div class="product">
+          <a href="souvenirs.html"
+            ><img
+              src="Images/Catalogue Images/Personal Styling Gift Vouchers for Men _ Sartoria Lab.jpg"
+          /></a>
+          <h3>Souvenirs & Gifts</h3>
+          <p>Perfect gift items</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOTIONS -->
+    <section>
+      <h2>Current Promotions</h2>
+      <div class="products">
+        <div class="product">
+          <img src="Images/Promotions/sales50.jpg" />
+          <h3>50% OFF</h3>
+          <p>Selected items on sale</p>
+        </div>
+
+        <div class="product">
+          <img src="Images/Promotions/black friday.jpg" />
+          <h3>Black Friday Deals</h3>
+          <p>Huge seasonal discounts</p>
+        </div>
+
+        <div class="product">
+          <img src="Images/Promotions/Buy 2 get 1 free for entire stock.jpg" />
+          <h3>Buy 2 Get 1 Free</h3>
+          <p>Limited time offer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section>
+      <h2>New Arrivals</h2>
+      <div class="products">
+        <!-- Kids Casual Set -->
+        <div class="product">
+          <a href="kids.html">
+            <img
+              src="Images/New Arrivals/2 Stücke Jungen Kinder Lässig vielseitig bequemes Set aus grafischem Rundhals Kurzarm Strick Shirt und locker sitzender Denim Shorts.jpg"
+            />
+          </a>
+          <h3>Kids Casual Set</h3>
+          <p>Comfortable kids fashion</p>
+          <select class="size-selector">
+            <option value="">Select Size</option>
+            <option>2-3 yrs</option>
+            <option>4-5 yrs</option>
+            <option>6-7 yrs</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <!-- Mens Linen Shirt -->
+        <div class="product">
+          <a href="mens.html"><img src="Images/New Arrivals/mensnew.jpg" /></a>
+          <h3>Mens Linen Shirt</h3>
+          <p>Fresh modern style</p>
+          <select class="size-selector">
+            <option value="">Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <!-- Unisex Vintage Shirt -->
+        <div class="product">
+          <a href="unisex.html"
+            ><img
+              src="Images/New Arrivals/Reclaimed Vintage - Uniseks gehaakt overhemd met rechte pasvorm en korte mouwen in ecru, deel van co-ord set-Neutraal.jpg"
+          /></a>
+          <h3>Unisex Vintage Shirt</h3>
+          <p>Classic look</p>
+          <select class="size-selector">
+            <option value="">Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <!-- Women Surfwear -->
+        <div class="product">
+          <a href="womens.html"
+            ><img src="Images/New Arrivals/surfware women.jpg"
+          /></a>
+          <h3>Women Surfwear</h3>
+          <p>Modern casual fashion</p>
+          <select class="size-selector">
+            <option value="">Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+
+        <!-- Special Gift Item -->
+        <div class="product">
+          <a href="souvenirs.html"
+            ><img src="Images/New Arrivals/Temu：Shop like a Billionaire.jpg"
+          /></a>
+          <h3>Special Gift Item</h3>
+          <p>Great souvenir product</p>
+          <button class="add-to-cart">Add to Cart 🛒</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- LOAD HEADER & FOOTER -->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("header-placeholder").innerHTML = data),
+        );
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("footer-placeholder").innerHTML = data),
+        );
+    </script>
+  </body>
+</html>

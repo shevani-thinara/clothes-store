@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store - Contact Us</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+      nav {
+        background: #34495e;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      section {
+        padding: 20px;
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #2c3e50;
+        padding-bottom: 5px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background: #2c3e50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #34495e;
+      }
+      footer {
+        text-align: center;
+        padding: 15px;
+        background: #2c3e50;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Clothes Store</h1>
+      <p>Get in Touch with Us</p>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="unisex.html">Unisex</a>
+      <a href="womens.html">Women's</a>
+      <a href="kids.html">Kids</a>
+      <a href="promotions.html">Promotions</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <section>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="example@email.com"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p>
+        You can also reach us at <strong>info@clothesstore.com</strong> or call
+        <strong>+94 123 456 789</strong>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2026 Clothes Store. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
